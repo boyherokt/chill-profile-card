@@ -63,6 +63,7 @@ Alternative: Download ZIP from the GitHub page and extract.
 - Assets: `media/` (video bg, images, audio, gallery)
 
 ## Live Demo
+- Live Demo: https://boyherokt.github.io/chill-profile-card/
 - GitHub Pages: enable Pages in repo settings (branch: `main`, folder: `/root`), then share the generated URL.
 
 ## Folder Structure

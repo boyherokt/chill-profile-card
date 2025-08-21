@@ -35,6 +35,7 @@ Trang đích cá nhân tối giản, giàu hiệu ứng với video nền, đổ
 - Esc: Đóng lightbox/gallery
 
 ## Live Demo
+- Live Demo: https://boyherokt.github.io/chill-profile-card/
 - GitHub Pages: bật Pages trong cài đặt repo (nhánh `main`, thư mục `/root`), sau đó dùng URL được tạo.
 
 ## Cấu trúc thư mục
