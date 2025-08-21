@@ -54,6 +54,17 @@ Trang đích cá nhân tối giản, giàu hiệu ứng với video nền, đổ
 └─ LICENSE
 ```
 
+## Thư viện ảnh
+- Đặt ảnh trong thư mục `media/gallery/`.
+- Quy ước tên file tuần tự: `1.jpg`, `2.jpg`, `3.jpg`, ... đến số bạn tham chiếu trong mã.
+- Cấu hình hiện tại trong `profile.js` (mục "Gallery + Lightbox") dùng:
+  - `IMAGES = ['media/gallery/1.jpg', ..., 'media/gallery/6.jpg']`
+- Muốn thêm ảnh:
+  - Thêm `7.jpg`, `8.jpg`, ... vào `media/gallery/`.
+  - Cập nhật mảng `IMAGES` trong `profile.js` để liệt kê các file mới.
+- Khuyến nghị: JPG, cạnh dài ≤ 2000px, dung lượng mỗi ảnh ≤ 1 MB để tải nhanh.
+- Nếu dùng PNG/GIF/WebP, hãy liệt kê đúng tên file trong `IMAGES`.
+
 ## Triển khai
 - GitHub Pages: Settings → Pages → Branch `main` → Root. Chờ 1–2 phút.
 - Netlify/Vercel: tạo site mới từ repo. Build command: không. Publish directory: root.
@@ -63,6 +74,19 @@ Trang đích cá nhân tối giản, giàu hiệu ứng với video nền, đổ
 2. Mở trực tiếp `index.html` bằng trình duyệt hiện đại.
    - Để tự động phát media mượt hơn, bật quyền autoplay (muted) nếu cần.
 3. Thay nội dung/asset theo ý bạn trong thư mục `media/`.
+
+### Clone
+```bash
+# HTTPS
+git clone https://github.com/boyherokt/chill-profile-card.git
+cd chill-profile-card
+
+# hoặc bằng GitHub CLI
+gh repo clone boyherokt/chill-profile-card
+cd chill-profile-card
+```
+
+Cách khác: Tải file ZIP từ trang GitHub và giải nén.
 
 ## Tùy biến
 - Nội dung, liên kết, nhãn: chỉnh trong `index.html`

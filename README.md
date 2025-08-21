@@ -43,6 +43,19 @@ A minimal, animated personal landing page with background video, theme/effects s
    - For full media autoplay support, ensure the browser allows muted autoplay.
 3. Put your media under `media/` if you customize.
 
+### Clone
+```bash
+# HTTPS
+git clone https://github.com/boyherokt/chill-profile-card.git
+cd chill-profile-card
+
+# or with GitHub CLI
+gh repo clone boyherokt/chill-profile-card
+cd chill-profile-card
+```
+
+Alternative: Download ZIP from the GitHub page and extract.
+
 ## Customize
 - Texts, links, and labels: edit `index.html`
 - Styles, themes, animations: edit `profile.css`
@@ -68,6 +81,17 @@ A minimal, animated personal landing page with background video, theme/effects s
 │  └─ gallery/
 └─ LICENSE
 ```
+
+## Gallery
+- Place images in `media/gallery/`.
+- Name files sequentially: `1.jpg`, `2.jpg`, `3.jpg`, ... up to the ones referenced in code.
+- Current config in `profile.js` uses:
+  - `IMAGES = ['media/gallery/1.jpg', ..., 'media/gallery/6.jpg']` under the section "Gallery + Lightbox".
+- To add more images:
+  - Add `7.jpg`, `8.jpg`, ... into `media/gallery/`.
+  - Update the `IMAGES` array in `profile.js` to include the new filenames.
+- Recommended: JPG, long edge ≤ 2000px, and keep each file preferably ≤ 1 MB for faster loads.
+- If you use PNG/GIF/WebP, list the exact filenames in `IMAGES`.
 
 ## Deployment
 - GitHub Pages: Settings → Pages → Branch `main` → Root. Wait 1–2 minutes.
